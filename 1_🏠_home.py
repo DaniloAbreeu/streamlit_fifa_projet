@@ -1,7 +1,7 @@
 import streamlit as st
 import webbrowser
 import pandas as pd
-
+ 
 
 if "data" not in st.session_state:
     df_data = pd.read_csv("C:\\Users\\danil\\OneDrive\\pasta danilo\\cursos\\Python\\asymove\\Criando Aplicativos Web com Streamlit\\Projeto Streamlit FIFA\\datasets\\CLEAN_FIFA23_official_data.csv", index_col=0)
