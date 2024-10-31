@@ -5,8 +5,7 @@ import openpyxl as op
  
 
 if "data" not in st.session_state:
-    path_to_excel = r"C:\Users\danil\OneDrive\pasta danilo\GitHub\streamlit_fifa_projet\datasets\CLEAN_FIFA23_official_data.xlsx"
-    
+    path_to_excel = "C:\Users\danil\OneDrive\pasta danilo\GitHub\streamlit_fifa_projet\datasets\CLEAN_FIFA23_official_data.xlsx"
     st.session_state["data"]=path_to_excel
 
 
