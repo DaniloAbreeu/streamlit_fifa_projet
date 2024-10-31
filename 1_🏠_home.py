@@ -1,10 +1,11 @@
 import streamlit as st
 import webbrowser
 import pandas as pd
+import openpyxl as op 
  
 
 if "data" not in st.session_state:
-    df_data = pd.read_csv("C:/Users/danil/OneDrive/pasta danilo/GitHub/streamlit_fifa_projet/datasets/CLEAN_FIFA23_official_data.csv", index_col=0)
+    df_data = r"C:\Users\danil\OneDrive\pasta danilo\GitHub\streamlit_fifa_projet\datasets\CLEAN_FIFA23_official_data.xlsx"
     st.session_state["data"]=df_data
 
 
