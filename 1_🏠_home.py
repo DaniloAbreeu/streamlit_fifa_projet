@@ -5,8 +5,8 @@ import openpyxl as op
  
 
 if "data" not in st.session_state:
-    path_to_excel = "C:\Users\danil\OneDrive\pasta danilo\GitHub\streamlit_fifa_projet\datasets\CLEAN_FIFA23_official_data.xlsx"
-    st.session_state["data"]=path_to_excel
+    df_data = pd.read_csv(r"C:\Users\danil\OneDrive\pasta danilo\GitHub\streamlit_fifa_projet\datasets\CLEAN_FIFA23_official_data.csv", index_col=0)
+    st.session_state["data"]=df_data
 
 
 st.title("#FIFA 2023 OFFICIAL DATESET! ⚽️")
